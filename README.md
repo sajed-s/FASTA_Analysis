@@ -15,7 +15,7 @@ Install the dependencies using the following command:
 ```bash
 pip install dendropy pandas biopython
 ```
-#Importing the libreries
+# Importing the libreries
 
 ```bash
 import dendropy
@@ -23,7 +23,7 @@ from dendropy.interop import genbank
 import pandas as pd
 from Bio import SeqIO
 ```
-#Importing the text file of gene IDs
+# Importing the text file of gene IDs
 In this part you should have a text file consist of your NCBI gene IDs
 
 ```bash
@@ -34,7 +34,7 @@ with open("E:\python\FMD\GI_A.txt", "r") as my_file:
 data_part1 = GIlist[0:200]
 data_part2 = GIlist[200:]
 ```
-#Extracting the data
+# Extracting the data
 In this part I would like to extract some information for each of my samples including:
 - Gene_id
 - Colloction date
@@ -72,7 +72,7 @@ for gb_rec in gb_dna:
         journal.append(ref.journal)
         title.append(ref.title)
 ```
-#Saving the data to CSV files
+# Saving the data to CSV files
 
 ```bash
 data_id_org_date = pd.DataFrame({'gene_id': gene_id, 'organism': organism, 'date': date})
@@ -81,7 +81,7 @@ data_id_org_date.to_csv('data_id_org_date_a.csv')
 data_pubmed_journal_title.to_csv('data_pubmed_journal_a.csv')
 ```
 
-#Downloading the strains
+# Downloading the strains
 Now lets download the FASTA sequences of each samples
 ```bash
 def get_fasta_a(ids):
