@@ -2,8 +2,11 @@
 
 This repository contains code for processing gene data obtained from GenBank. The code extracts gene IDs, dates, organisms, titles, journals, and PubMed IDs from GenBank records. It also downloads the DNA sequences associated with the gene IDs.
 
-![](https://github.com/sajed-s/FASTA_Analysis/blob/main/istockphoto-1055935724-612x612.jpg)
+<div style="text-align:center;">
+    ![](https://github.com/sajed-s/FASTA_Analysis/blob/main/istockphoto-1055935724-612x612.jpg)
+</div>
 
+This repository contains code for processing gene data obtained from GenBank. The code extracts gene IDs, dates, organisms, titles, journals, and PubMed IDs from GenBank records. It also downloads the DNA sequences associated with the gene IDs.
 ## Dependencies
 
 The following dependencies are required to run the code:
